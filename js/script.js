@@ -10,13 +10,14 @@
  */
 function calculate () {
   // input
+  const length = parseInt(document.getElementById('length-of-triangle').value)
+  const width = parseInt(document.getElementById('width-of-triangle').value)
   const height = parseInt(document.getElementById('height-of-triangle').value)
-  const base = parseInt(document.getElementById('base-of-triangle').value)
 
   // process
-  const area = (base * height) / 2
+  const volume = (length * width * height) / 3
 
   // output
-  document.getElementById('area').innerHTML = 'Area is: ' + area + ' cm²'
+  document.getElementById('volume').innerHTML = 'Volume is: ' + volume + ' mm³'
 }
 
